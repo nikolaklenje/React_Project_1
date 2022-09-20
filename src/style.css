@@ -36,9 +36,11 @@ h1, p{
   
 }
 .Card{
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
 }
 .star{
   height: 20px;
@@ -66,4 +68,10 @@ h1, p{
     color: black;
     font-family: poppins;
     font-size: 10px;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
